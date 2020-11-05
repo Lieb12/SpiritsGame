@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EBADF27255445F200384244 /* LadyRadical.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBADF26255445F200384244 /* LadyRadical.ttf */; };
+		2EBADF2A2554463400384244 /* jackeyfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBADF292554463400384244 /* jackeyfont.ttf */; };
+		2EBADF2D25545E6F00384244 /* lock-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EBADF2C25545E6F00384244 /* lock-icon.png */; };
+		2EBADF2F2554822900384244 /* LvlSelectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBADF2E2554822900384244 /* LvlSelectScreen.swift */; };
 		2EE0815125543415001E527C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE0815025543415001E527C /* AppDelegate.swift */; };
 		2EE0815325543415001E527C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE0815225543415001E527C /* SceneDelegate.swift */; };
 		2EE0815525543415001E527C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE0815425543415001E527C /* ViewController.swift */; };
 		2EE0815825543415001E527C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0815625543415001E527C /* Main.storyboard */; };
 		2EE0815A25543418001E527C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0815925543418001E527C /* Assets.xcassets */; };
 		2EE0815D25543418001E527C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0815B25543418001E527C /* LaunchScreen.storyboard */; };
+		2EE08165255439A0001E527C /* firstRoot.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EE08164255439A0001E527C /* firstRoot.json */; };
+		2EE0816725544034001E527C /* bookhud.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0816625544034001E527C /* bookhud.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EBADF26255445F200384244 /* LadyRadical.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LadyRadical.ttf; sourceTree = "<group>"; };
+		2EBADF292554463400384244 /* jackeyfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jackeyfont.ttf; sourceTree = "<group>"; };
+		2EBADF2C25545E6F00384244 /* lock-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-icon.png"; sourceTree = "<group>"; };
+		2EBADF2E2554822900384244 /* LvlSelectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvlSelectScreen.swift; sourceTree = "<group>"; };
 		2EE0814D25543415001E527C /* SpiritsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiritsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE0815025543415001E527C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EE0815225543415001E527C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		2EE0815925543418001E527C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EE0815C25543418001E527C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EE0815E25543418001E527C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE08164255439A0001E527C /* firstRoot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = firstRoot.json; sourceTree = "<group>"; };
+		2EE0816625544034001E527C /* bookhud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookhud.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EBADF282554460600384244 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2EBADF26255445F200384244 /* LadyRadical.ttf */,
+				2EBADF292554463400384244 /* jackeyfont.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		2EBADF2B25545E4900384244 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				2EE0816625544034001E527C /* bookhud.png */,
+				2EBADF2C25545E6F00384244 /* lock-icon.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		2EE0814425543415001E527C = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +89,14 @@
 				2EE0815025543415001E527C /* AppDelegate.swift */,
 				2EE0815225543415001E527C /* SceneDelegate.swift */,
 				2EE0815425543415001E527C /* ViewController.swift */,
+				2EBADF2E2554822900384244 /* LvlSelectScreen.swift */,
 				2EE0815625543415001E527C /* Main.storyboard */,
 				2EE0815925543418001E527C /* Assets.xcassets */,
 				2EE0815B25543418001E527C /* LaunchScreen.storyboard */,
+				2EBADF2B25545E4900384244 /* img */,
+				2EBADF282554460600384244 /* fonts */,
 				2EE0815E25543418001E527C /* Info.plist */,
+				2EE08164255439A0001E527C /* firstRoot.json */,
 			);
 			path = SpiritsGame;
 			sourceTree = "<group>";
@@ -127,7 +161,12 @@
 			files = (
 				2EE0815D25543418001E527C /* LaunchScreen.storyboard in Resources */,
 				2EE0815A25543418001E527C /* Assets.xcassets in Resources */,
+				2EBADF2A2554463400384244 /* jackeyfont.ttf in Resources */,
+				2EE08165255439A0001E527C /* firstRoot.json in Resources */,
 				2EE0815825543415001E527C /* Main.storyboard in Resources */,
+				2EE0816725544034001E527C /* bookhud.png in Resources */,
+				2EBADF27255445F200384244 /* LadyRadical.ttf in Resources */,
+				2EBADF2D25545E6F00384244 /* lock-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +179,7 @@
 			files = (
 				2EE0815525543415001E527C /* ViewController.swift in Sources */,
 				2EE0815125543415001E527C /* AppDelegate.swift in Sources */,
+				2EBADF2F2554822900384244 /* LvlSelectScreen.swift in Sources */,
 				2EE0815325543415001E527C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

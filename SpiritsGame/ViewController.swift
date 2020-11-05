@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let LadyRadical = UIFont(name: "/fonts/LadyRadical.ttf", size: 24)
+    
+    @IBOutlet var titleTapRec: UITapGestureRecognizer!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tapLabel: UILabel!
+    
+    let playerLvl: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
     }
 
-
+    @IBAction func titleTapped(_ sender: Any) {
+        
+    }
+    
 }
 
