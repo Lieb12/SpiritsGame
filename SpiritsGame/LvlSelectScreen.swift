@@ -9,22 +9,30 @@
 import UIKit
 
 class LvlSelectScreen: UIViewController {
-
+    
+    // let defaults = UserDefaults
+    
+    @IBOutlet weak var lvl1View: UIView!
+    @IBOutlet weak var lvl2View: UIView!
+    @IBOutlet weak var lvl2LockView: UIImageView!
+    @IBOutlet weak var lvl2Text: UILabel!
+    
+    // var userLvl = UserDefaults.level
+    var userLvl = 1
+    
+    let level1Name = "1. Trade Secrets"
+    let level2Name = "2. Bleeding Heart"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if userLvl == 1 {
+            lvl2LockView.alpha = 0.0
+            lvl2Text.text = level2Name
+            lvl2Text.textColor = UIColor.white
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }

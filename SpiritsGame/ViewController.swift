@@ -17,13 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet var titleTapRec: UITapGestureRecognizer!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tapLabel: UILabel!
-
     
-    let level1Name = "1. Trade Secrets"
-    let level2Name = "2. Bleeding-heart"
-    let level3Name = "3. Encore"
-    
-    
+    var boomSoundEffect: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +27,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func titleTapped(_ sender: Any) {
-        UIView.animate(withDuration: 4, animations: {
-            self.tapLabel.alpha = 0.0;
-            self.titleLabel.alpha = 0.0
-            })
-        usleep(3000000)
+        
+        let path = Bundle.main.path(forResource: "boomsfx.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            boomSoundEffect = try AVAudioPlayer(contentsOf: url)
+            boomSoundEffect?.play()
+        } catch {
+            // couldn't load file :(
+        }
+        
+        
+        
         performSegue(withIdentifier: "titleToMenu", sender: UITapGestureRecognizer.self)
     }
     
