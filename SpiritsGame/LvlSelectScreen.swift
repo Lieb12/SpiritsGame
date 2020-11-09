@@ -12,6 +12,8 @@ class LvlSelectScreen: UIViewController {
     
     // let defaults = UserDefaults
     
+    var userLvl = 1
+    
     @IBOutlet weak var lvl1View: UIView!
     @IBOutlet weak var lvl2View: UIView!
     @IBOutlet weak var lvl2LockView: UIImageView!

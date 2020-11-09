@@ -112,6 +112,7 @@
                         <outlet property="lvl2LockView" destination="VZk-mY-izY" id="nZT-Dj-4Yw"/>
                         <outlet property="lvl2Text" destination="W4e-zl-cru" id="bts-HN-MUE"/>
                         <outlet property="lvl2View" destination="deV-cG-ANo" id="PfO-5Y-3Ev"/>
+                        <segue destination="dAk-Br-Z74" kind="presentation" identifier="menuToLevel" modalPresentationStyle="fullScreen" id="zmH-ha-scM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NdM-ao-RiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,6 +252,6 @@
         <image name="lock-icon.png" width="108" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UpG-vB-0lL"/>
+        <segue reference="XVG-Hj-Z3I"/>
     </inferredMetricsTieBreakers>
 </document>
