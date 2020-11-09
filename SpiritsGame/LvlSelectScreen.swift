@@ -17,9 +17,6 @@ class LvlSelectScreen: UIViewController {
     @IBOutlet weak var lvl2LockView: UIImageView!
     @IBOutlet weak var lvl2Text: UILabel!
     
-    // var userLvl = UserDefaults.level
-    var userLvl = 1
-    
     let level1Name = "1. Trade Secrets"
     let level2Name = "2. Bleeding Heart"
     
